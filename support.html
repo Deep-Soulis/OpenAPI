@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HexaCast Support</title>
+  <style>
+    :root {
+      --bg: #f6f4ff;
+      --panel: rgba(255, 255, 255, 0.85);
+      --text: #1b143a;
+      --muted: #5d547d;
+      --accent: #4c37d6;
+      --border: rgba(76, 55, 214, 0.12);
+      --shadow: 0 20px 50px rgba(55, 35, 136, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(139, 124, 255, 0.35), transparent 30%),
+        linear-gradient(180deg, #f8f7ff 0%, #f3f0ff 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(840px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .panel {
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 38px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(34px, 5vw, 52px);
+    }
+
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .nav {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    .box {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(76, 55, 214, 0.06);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <nav class="nav">
+        <a href="./index.html">Home</a>
+        <a href="./privacy.html">Privacy Policy</a>
+      </nav>
+
+      <h1>HexaCast Support</h1>
+      <p>
+        If you need help using HexaCast, want to report a bug, or have questions about the app,
+        please contact us by email.
+      </p>
+
+      <div class="box">
+        <p>
+          Support email:
+          <a href="mailto:yang516350902@gmail.com">yang516350902@gmail.com</a>
+        </p>
+        <p>Response time: typically within 3 to 5 business days.</p>
+      </div>
+
+      <h2>Common Support Topics</h2>
+      <ul>
+        <li>App access or feature questions</li>
+        <li>Bug reports or unexpected behavior</li>
+        <li>Purchase or subscription issues</li>
+        <li>Feedback and feature suggestions</li>
+      </ul>
+
+      <h2>Before Contacting Support</h2>
+      <ul>
+        <li>Include your device model and iOS version if possible</li>
+        <li>Describe the issue and the steps that led to it</li>
+        <li>Attach screenshots when they help explain the problem</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
